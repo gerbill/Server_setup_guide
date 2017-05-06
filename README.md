@@ -27,7 +27,23 @@ apt-get install -y libxml2-dev libxslt1-dev
 apt-get install python3-lxml
 ```
 
+### Installing Python3 modules ###
+
+* Install Requests:
+```bash
+pip3 install requests
+```
+* Install Selenium:
+```bash
+pip3 install selenium
+```
+* Install BeautifulSoup:
+```bash
+pip3 install bs4
+```
+
 ### Installing MongoDB ###
+Only needed for scripts that use MongoDB
 
 * Import public key:
 ```bash
@@ -49,28 +65,14 @@ apt-get install -y mongodb-org
 ```bash
 service mongod start
 ```
-
-### Installing Python3 modules ###
-
-* Install Requests:
-```bash
-pip3 install requests
-```
-* Install Selenium:
-```bash
-pip3 install selenium
-```
-* Install BeautifulSoup:
-```bash
-pip3 install bs4
-```
 * Install PyMongo:
 ```bash
 pip3 install pymongo
 ```
 
 
-### Installing and setting up Firefox (if you are going to use semrush scraper) ###
+### Installing and setting up Firefox ###
+Only needed for scripts that use headless FireFox (like SemRush bot)
 
 * Install Firefox
 ```bash
