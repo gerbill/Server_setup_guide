@@ -83,6 +83,10 @@ Create a new database. You can name it "testdb" or whatever you want.
 ```bash
 createdb testdb
 ```
+Install the psycopg2 Python package
+```bash
+pip install psycopg2
+```
 
 ## Installing and setting up Firefox ##
 Only needed for scripts that use headless FireFox (like SemRush bot)
