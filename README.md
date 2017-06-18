@@ -85,7 +85,7 @@ createdb testdb
 ```
 Install the psycopg2 Python package
 ```bash
-pip install psycopg2
+pip3 install psycopg2
 ```
 
 ## Installing and setting up Firefox ##
