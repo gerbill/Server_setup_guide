@@ -3,7 +3,7 @@ Assuming you do everything as root.
 
 Each line in code snippet is a separate command in a terminal, so you should run em separately, line by line.
 
-### Setting up Python3 ###
+## Setting up Python3 ##
 Ubuntu 14 should have Python3 installed by default so we only need to set it up for our needs.
 
 * Updating package management tool 
@@ -26,8 +26,8 @@ apt-get install -y libxml2-dev libxslt1-dev
 ```bash
 apt-get install python3-lxml
 ```
-- - - -
-### Installing Python3 modules ###
+
+## Installing Python3 modules ##
 
 * Install Requests:
 ```bash
@@ -41,8 +41,8 @@ pip3 install selenium
 ```bash
 pip3 install bs4
 ```
-- - - -
-### Installing MongoDB ###
+
+## Installing MongoDB ##
 Only needed for scripts that use MongoDB
 
 * Import public key:
@@ -69,8 +69,8 @@ service mongod start
 ```bash
 pip3 install pymongo
 ```
-- - - -
-### Installing PostgreSQL ###
+
+## Installing PostgreSQL ##
 Install PostgreSQL and a few packages since we want to both run PostgreSQL and use the psycopg2 driver with our Python programs. PostgreSQL will also be installed as a system service.
 ```bash
 apt-get install -y postgresql libpq-dev postgresql-client postgresql-client-common
@@ -83,8 +83,8 @@ Create a new database. You can name it "testdb" or whatever you want.
 ```bash
 createdb testpython
 ```
-- - - -
-### Installing and setting up Firefox ###
+
+## Installing and setting up Firefox ##
 Only needed for scripts that use headless FireFox (like SemRush bot)
 
 * Install Firefox
