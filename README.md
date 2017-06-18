@@ -70,6 +70,19 @@ service mongod start
 pip3 install pymongo
 ```
 
+### Installing PostgreSQL ###
+Install PostgreSQL and a few packages since we want to both run PostgreSQL and use the psycopg2 driver with our Python programs. PostgreSQL will also be installed as a system service.
+```bash
+apt-get install -y postgresql libpq-dev postgresql-client postgresql-client-common
+```
+Create a user and a database instance. First switch to "postgres" account
+```bash
+sudo -i -u postgres
+```
+Create a new database. You can name it "testdb" or whatever you want.
+```bash
+createdb testpython
+```
 
 ### Installing and setting up Firefox ###
 Only needed for scripts that use headless FireFox (like SemRush bot)
