@@ -89,12 +89,12 @@ psql testdb
 ```
 Create a table (use your column names and data types!)
 ```bash
-CREATE TABLE table_name(
-   column1 datatype,
-   column2 datatype,
-   column3 datatype,
-   columnN datatype,
-   PRIMARY KEY( one or more columns )
+CREATE TABLE COMPANY(
+   ID INT PRIMARY KEY NOT NULL,
+   NAME TEXT NOT NULL,
+   AGE INT NOT NULL,
+   ADDRESS CHAR(50),
+   SALARY REAL
 );
 ```
 Install the psycopg2 Python package if you want your Python3 apps to use PostgreSQL
