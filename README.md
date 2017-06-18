@@ -81,7 +81,7 @@ sudo -i -u postgres
 ```
 Create a new database. You can name it "testdb" or whatever you want.
 ```bash
-createdb testpython
+createdb testdb
 ```
 
 ## Installing and setting up Firefox ##
