@@ -83,7 +83,21 @@ Create a new database. You can name it "testdb" or whatever you want.
 ```bash
 createdb testdb
 ```
-Install the psycopg2 Python package
+Use this newly created "testdb" database to make tables there
+```bash
+psql testdb
+```
+Create a table (use your column names and data types!)
+```bash
+CREATE TABLE table_name(
+   column1 datatype,
+   column2 datatype,
+   column3 datatype,
+   columnN datatype,
+   PRIMARY KEY( one or more columns )
+);
+```
+Install the psycopg2 Python package if you want your Python3 apps to use PostgreSQL
 ```bash
 pip3 install psycopg2
 ```
