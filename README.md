@@ -128,3 +128,27 @@ tar -xvzf geckodriver*
 chmod +x geckodriver
 export PATH=$PATH:/var/geckodriver
 ```
+
+## Installing and setting up PhantomJs ##
+Only needed for scripts that use PhantomJS as a headless browser (like Google/Bing images scraper)
+
+* Before installing PhantomJS, you will need to install some required packages on your system.
+```bash
+apt-get install build-essential chrpath libssl-dev libxft-dev libfreetype6-dev libfreetype6 libfontconfig1-dev libfontconfig1 -y
+```
+* Download the PhantomJS
+```bash
+wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+```
+* Once the download is complete, extract the downloaded archive file to desired system location:
+```bash
+tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /usr/local/share/
+```
+* Create a symlink of PhantomJS binary file to systems bin dirctory:
+```bash
+ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/
+```
+* PhantomJS is now installed on your system. You can now verify the installed version of PhantomJS
+```bash
+phantomjs --version
+```
